@@ -24,6 +24,7 @@ body {
     height: 100vh;
     color: #fff;
     overflow: auto;
+    background-color: #151515;
 }
 
 .menuBar {
@@ -89,37 +90,9 @@ body {
 }
 
 
-.dark_sun {
-    margin-top: 30px;
-    position: fixed;
-    z-index: 1000;
-    right: 30px;
-}
-
-.dark_sun img {
-    width: 40px;
-    height: 40px;
-    border-radius: 100px;
-    object-fit: cover;
-    background-color: white;
-    transition: transform 0.6s ease;
-}
-
-@keyframes spinTwice {
-    0% {
-        transform: rotate(10deg);
-    }
-
-    50% {
-        transform: rotate(360deg);
-    }
-
-    100% {
-        transform: rotate(720deg);
-    }
-}
-
-/* Hover qilganda animatsiyani ishga tushirish */
-.dark_sun:hover img {
-    animation: spinTwice 0.6s ease;
+.dark_sun{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
 }

@@ -1,36 +1,19 @@
-import { useState, useEffect } from "react";
-import SunImg from "../assets/heroicons-solid--sun.svg";
-import DarkImg from "../assets/tdesign--mode-dark.svg";
+import "./components.css"
 
-export default function Header() {
-    const [theme, setTheme] = useState(() => {
-        const saved = localStorage.getItem("site-theme");
-        if (saved) return saved;
-        return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-    });
+import Image from "../assets/tdesign--mode-dark.svg"
+import Setting from "../assets/uil--setting.svg"
+import Sun from "../assets/mingcute--sun-fill.svg"
 
-    useEffect(() => {
-        const root = document.documentElement;
-        if (theme === "dark") {
-            root.setAttribute("data-theme", "dark");
-        } else {
-            root.removeAttribute("data-theme");
-        }
-        localStorage.setItem("site-theme", theme);
-    }, [theme]);
-
-    const toggleTheme = () => setTheme(prev => (prev === "dark" ? "light" : "dark"));
-
-    return (
-        <header>
-            <div className="dark_sun" onClick={toggleTheme} style={{ cursor: "pointer" }}>
-                <img
-                    src={theme === "dark" ? DarkImg : SunImg}
-                    alt={theme === "dark" ? "Moon Icon" : "Sun Icon"}
-                    width={30}
-                    height={30}
-                />
+const Header = () => {
+    return <>
+        <div className="light">
+            <div className="dark_sun">
+                <button><img src={Sun} alt="dark" /></button>
+                <button><img src={Setting} alt="Setting" /></button>
             </div>
-        </header>
-    );
+        </div>
+    </>
 }
+
+
+export default Header;
