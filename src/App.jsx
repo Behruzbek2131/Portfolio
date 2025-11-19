@@ -1,11 +1,11 @@
 import AllComponents from "./components/AllComponents"
-// import RoutesFile from "./constants/routes"
-// import "./components/components.css"
+import { ThemeProvider } from "./context/themeContext"
 
 const App = () => {
     return <>
-        <AllComponents />
-        {/* <RoutesFile /> */}
+        <ThemeProvider>
+            <AllComponents />
+        </ThemeProvider>
     </>
 }
 
