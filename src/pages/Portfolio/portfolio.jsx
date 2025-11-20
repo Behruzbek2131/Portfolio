@@ -21,17 +21,6 @@ const PortfolioPage = () => {
                         <a href="https://telefon-sayt-wsor.vercel.app" target="_blink"><img src="/image4.png" alt="" /></a>
                     </div>
                 </div>
-                {/* <div className="projects_card1">
-                    <div className="card">
-                        <img src="" alt="" />
-                    </div>
-                    <div className="card">
-                        <img src="" alt="" />
-                    </div>
-                    <div className="card">
-                        <img src="" alt="" />
-                    </div>
-                </div> */}
             </div>
         </div>
     </>

@@ -27,17 +27,17 @@ const HomePage = () => {
                     I'm a <span className="typing"></span>
                 </h2>
                 <p>
-                   <span className="w">W</span>elcome to my portfolio website! I'm Behruzbek, a passionate frontend
+                    <span className="w">W</span>elcome to my portfolio website! I'm Behruzbek, a passionate frontend
                     developer dedicated to crafting engaging and user-friendly web
                     experiences. Explore my projects and skills as you navigate through my
                     site.
                 </p>
-                <a href="/about"><button className="btn">More About Me</button></a>
             </div>
 
             <div className="home_img">
                 <img src={myImage} alt="Behruzbek" />
             </div>
+            <a href="/about"><button className="btn">More About Me</button></a>
         </div>
     );
 };
