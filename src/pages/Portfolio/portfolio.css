@@ -64,14 +64,16 @@
 }
 
 .projects{
-    display: flex;
+    /* display: flex; */
     /* flex-direction: column; */
     padding: 30px;
+    justify-content: space-between;
 }
 
 .projects_card{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-around; */
+    gap: 110px;
     margin-top: 50px;
 }
 

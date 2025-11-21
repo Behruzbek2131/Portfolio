@@ -25,7 +25,7 @@ const AboutPage = () => {
                 if (done) clearInterval(intervalId);
                 return updated;
             });
-        }, 25); // har 25ms da 1% (silliqroq animatsiya)
+        }, 25);
         return () => clearInterval(intervalId);
     }, []);
 

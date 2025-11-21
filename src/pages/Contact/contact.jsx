@@ -33,7 +33,7 @@ const ContactPage = () => {
             <h1 className="h1">Contact Me</h1>
 
             <div className="contact_me">
-                <h1>Have You Any Questions?</h1>
+                <h1 className="h11">Have You Any Questions?</h1>
                 <h5>I'm At your service</h5>
 
                 <div className="contacts">
@@ -72,30 +72,27 @@ const ContactPage = () => {
 
                 <div className="form">
 
-                    <div className="name">
-                        <input
-                            type="text"
-                            name="name"
-                            value={form.name}
-                            onChange={handleChange}
-                            placeholder="Your Name"
-                        />
+                    <input
+                        type="text"
+                        name="name"
+                        value={form.name}
+                        onChange={handleChange}
+                        placeholder="Your Name"
+                    />
 
-                        <input
-                            type="email"
-                            name="email"
-                            value={form.email}
-                            onChange={handleChange}
-                            placeholder="Your Email"
-                        />
-                    </div>
+                    <input
+                        type="email"
+                        name="email"
+                        value={form.email}
+                        onChange={handleChange}
+                        placeholder="Your Email"
+                    />
 
                     <input
                         type="text"
                         name="subject"
                         value={form.subject}
                         onChange={handleChange}
-                        className="subject"
                         placeholder="Subject"
                     />
 

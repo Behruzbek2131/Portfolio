@@ -6,7 +6,7 @@ import "./home.css";
 const HomePage = () => {
     useEffect(() => {
         const typed = new Typed(".typing", {
-            strings: ["Web Developer", "Freelancer", "YouTuber"],
+            strings: ["Web Developer"],
             typeSpeed: 100,
             backSpeed: 60,
             loop: true,
@@ -18,7 +18,8 @@ const HomePage = () => {
     }, []);
 
     return (
-        <div className="home">
+       <div className="homeWrap">
+         <div className="home">
             <div className="home_text">
                 <h1>
                     Hello, my name is <span className="name1">Safaboyev Behruzbek</span>
@@ -37,8 +38,9 @@ const HomePage = () => {
             <div className="home_img">
                 <img src={myImage} alt="Behruzbek" />
             </div>
-            <a href="/about"><button className="btn">More About Me</button></a>
         </div>
+            <a href="/about"><button className="btn">More About Me</button></a>
+       </div>
     );
 };
 
