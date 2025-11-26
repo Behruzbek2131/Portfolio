@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Typed from "typed.js";
 import myImage from "../../assets/image1.png";
 import "./home.css";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
     useEffect(() => {
@@ -18,29 +19,31 @@ const HomePage = () => {
     }, []);
 
     return (
-       <div className="homeWrap">
-         <div className="home">
-            <div className="home_text">
-                <h1>
-                    Hello, my name is <span className="name1">Safaboyev Behruzbek</span>
-                </h1>
-                <h2>
-                    I'm a <span className="typing"></span>
-                </h2>
-                <p>
-                    <span className="w">W</span>elcome to my portfolio website! I'm Behruzbek, a passionate frontend
-                    developer dedicated to crafting engaging and user-friendly web
-                    experiences. Explore my projects and skills as you navigate through my
-                    site.
-                </p>
-            </div>
+        <div className="homeWrap">
+            <div className="home">
+                <div className="home_text">
+                    <h1>
+                        Hello, my name is <span className="name1">Safaboyev Behruzbek</span>
+                    </h1>
+                    <h2>
+                        I'm a <span className="typing"></span>
+                    </h2>
+                    <p>
+                        <span className="w">W</span>elcome to my portfolio website! I'm Behruzbek, a passionate frontend
+                        developer dedicated to crafting engaging and user-friendly web
+                        experiences. Explore my projects and skills as you navigate through my
+                        site.
+                    </p>
+                </div>
 
-            <div className="home_img">
-                <img src={myImage} alt="Behruzbek" />
+                <div className="home_img">
+                    <img src={myImage} alt="Behruzbek" />
+                </div>
             </div>
+            <Link to="/about">
+                <button className="btn">More About Me</button>
+            </Link>
         </div>
-            <a href="/about"><button className="btn">More About Me</button></a>
-       </div>
     );
 };
 
